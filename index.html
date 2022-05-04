@@ -68,9 +68,9 @@ document.getElementById('uploadf').style.display = "none"; document.getElementBy
                     } else if (['gb'].includes(extension)) {
                         var core = 'gb';
                     } else if (['gen'].includes(extension)) {
-                        var core = 'gen';
+                        var core = 'segaGG';
 		    } else if (['sms'].includes(extension)) {
-                        var core = 'sms';
+                        var core = 'segaMS';
 		    } else {
                         var core = await function() {
                             return new Promise(function(resolve, reject) {
@@ -83,12 +83,12 @@ document.getElementById('uploadf').style.display = "none"; document.getElementBy
                                              "PlayStation": "psx",
                                              "Virtual Boy": "vb",
                                              "Sega Mega Drive": "segaMD",
-                                             "Sega Master System": "sms",
+                                             "Sega Master System": "segaMS",
                                              "Sega CD": "segaCD",
                                              "Atari Lynx": "lynx",
                                              "Sega 32X": "sega32x",
                                              "Atari Jaguar": "jaguar",
-                                             "Sega Game Gear": "gen",
+                                             "Sega Game Gear": "segaGG",
                                              "Sega Saturn": "segaSaturn",
                                              "Atari 7800": "atari7800",
                                              "Atari 2600": "atari2600"};
