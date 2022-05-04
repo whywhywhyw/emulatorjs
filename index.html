@@ -67,7 +67,11 @@ document.getElementById('uploadf').style.display = "none"; document.getElementBy
                         var core = 'gba';
                     } else if (['gb'].includes(extension)) {
                         var core = 'gb';
-                    } else {
+                    } else if (['gen'].includes(extension)) {
+                        var core = 'gen';
+		    } else if (['sms'].includes(extension)) {
+                        var core = 'sms';
+		    } else {
                         var core = await function() {
                             return new Promise(function(resolve, reject) {
                                 var cores = {"NES / Nintendo Entertainment System / Famicon": "nes",
